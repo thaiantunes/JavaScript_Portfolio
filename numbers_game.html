@@ -1,38 +1,15 @@
-<meta charset="UTF-8">
-
-<h2> Number guessing game! Guess which number I'm thinking :) </h2>
-<h4>Hint: the number varies between 1 and 10. </h4>
-<br>
-
-<input/>
-<button>Guess</button>
-
-<script>
-    var input = document.querySelector("input");
-        input.focus();
-    var chances = 1
-    var secretNumber = Math.round(Math.random() * 10);
-
-    function check() {
-        if(input.value)
-        if(input.value == secretNumber) {
-            alert("You got it!");
-            return
-        }
-        if(chances == 3) {
-            alert("Failed! Refresh the page to restart")
-            return
-        }
-        else {
-            alert("Try again! " + (3 - chances) + " chances left!");
-            input.value = "";
-            input.focus();
-            chances++
-        }
-    }
-
-    var button = document.querySelector("button");
-
-    button.onclick = check;
-
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Number guessing game</title>
+  </head>
+  <body>
+    <h2> Number guessing game! Guess which number I'm thinking :) </h2>
+    <h4>Hint: the number varies between 1 and 10. </h4>
+    <br>
+    <input/>
+    <button>Guess</button>
+    <script src="game.js"></script>
+  </body>
+</html>
