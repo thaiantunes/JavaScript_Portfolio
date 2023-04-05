@@ -36,7 +36,7 @@ function refreshScreen() {
 	drawTarget(xRandom, yRandom);
 }
 
-setInterval(refreshScreen, 700);
+setInterval(refreshScreen, 800);
 
 function shoot(event) {
 	var x = event.pageX - screen.offsetLeft;
