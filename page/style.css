@@ -44,25 +44,41 @@ nav a:hover {
 
 .titulo-centralizado {
 	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
 }
 
+.bold {
+	font-weight: bold;
+}
+
+
 p {
-	text-align: center;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;	
 }
 
 #missao {
-	font-size: 20px
+	font-size: 20px;
+	font-style: italic;
 }
 
-em strong{
-	color: red;
+.red-bold {
+  color: red;
+  font-weight: bold;
 }
 
 .sos {
+	list-style-type: disc;
 	display:inline-block;
 	vertical-align: top;
 	width: 20%;
 	margin-right: 15%;
+	margin-left: 5%;
 	font-style: italic;
 }
 
