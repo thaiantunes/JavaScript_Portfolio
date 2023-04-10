@@ -28,7 +28,7 @@
 							<th>BMI</th>
 						</tr>
 					</thead>
-					<tbody id="tabela-patients">
+					<tbody id="patientTable">
 						<tr class="patient">
 							<td class="info-name">Paul</td>
 							<td class="info-weight">100</td>
@@ -70,6 +70,32 @@
 					</tbody>
 				</table>
 
+			</section>
+
+			<br><br>
+
+			<section class="container">
+			    <h2 id="title-form">Add New Patient</h2>
+			    <form id="form-add">
+			        <div class="group">
+			            <label for="name">Name:</label>
+			            <input id="name" name="name" type="text" placeholder="type patient name" class="field">
+			        </div>
+			        <div class="group">
+			            <label for="weight">Weight:</label>
+			            <input id="weight" name="weight" type="text" placeholder="type patient weight" class="field field-medio">
+			        </div>
+			        <div class="group">
+			            <label for="height">Height:</label>
+			            <input id="height" name="height" type="text" placeholder="type patient height" class="field field-medio">
+			        </div>
+			        <div class="group">
+			            <label for="fat">Fat Percentage:</label>
+			            <input id="fat" type="text" placeholder="type patient body fat percentage" class="field field-medio">
+			        </div>
+
+			        <button id="add-patient" class="principal-button">Add</button>
+			    </form>
 			</section>
 		</main>
 
