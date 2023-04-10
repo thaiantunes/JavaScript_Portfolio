@@ -3,6 +3,13 @@ topTitle.textContent = "BMI Table";
 
 var patients = document.querySelectorAll(".patient");
 
+function calculateBmi(weight, height){
+	var bmi = 0;
+	bmi = weight / (height * height);
+
+	return bmi.toFixed(2);
+}
+
 for(var i=0; i < patients.length; i++){
 
 	var patient = patients[i]
@@ -33,38 +40,7 @@ for(var i=0; i < patients.length; i++){
 	}
 
 	if (weightOK && heightOK){
-		tdBmi.textContent = (weight / (height * height)).toFixed(2);
+		tdBmi.textContent = calculateBmi(weight, height);
 	}
 } 
 
-var addButton = document.querySelector("#add-patient");
-
-addButton.addEventListener("click", function(){
-	event.preventDefault();
-	var form = document.querySelector("#form-add");
-	// var name = form.name.value;
-	// var weight = form.weight.value;
-	// var height = form.height.value;
-	// var fat = form.fat.value;
-
-	var patientTr = document.createElement("tr");
-	var nameTd = document.createElement("td");
-	var weightTd = document.createElement("td");
-	var heightTd = document.createElement("td");
-	var fatTd = document.createElement("td");
-	var imcTd = document.createElement("td");
-
-	nameTd.textContent = form.name.value;
-	weightTd.textContent = form.weight.value;
-	heightTd.textContent = form.height.value;
-	fatTd.textContent = form.fat.value;
-
-	patientTr.appendChild(nameTd);
-	patientTr.appendChild(weightTd);
-	patientTr.appendChild(heightTd);
-	patientTr.appendChild(fatTd);
-
-	var patientTable = document.querySelector("#patientTable");
-	patientTable.appendChild(patientTr);
-
-});
