@@ -22,17 +22,17 @@ for(var i=0; i < patients.length; i++){
 	var weight = tdWeight.textContent;
 	var height = tdHeight.textContent;
 
-	var weightOK = true;
-	var heightOK = true;
+	var weightOK = checkWeight(weight);
+	var heightOK = checkHeight(height);
 
-	if(weight < 0 || weight > 1000) {
+	if(!weightOK) {
 		console.log("Wrong weight!")
 		weightOK = false;
 		tdBmi.textContent = "Wrong weight!"
 		patient.classList.add("invalid-patient")
 	}
 
-	if(height < 0 || height > 3.00){
+	if(!heightOK){
 		console.log("Wrong height!")
 		heightOK = false;
 		tdBmi.textContent = "Wrong height!"
@@ -44,3 +44,20 @@ for(var i=0; i < patients.length; i++){
 	}
 } 
 
+function checkWeight(weight){
+
+    if (weight >= 0 && weight <= 1000) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function checkHeight(height) {
+
+    if (height >= 0 && height <= 3.0) {
+        return true;
+    } else {
+        return false;
+    }
+}

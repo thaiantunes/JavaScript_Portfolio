@@ -5,12 +5,33 @@ addButton.addEventListener("click", function(){
 	var form = document.querySelector("#form-add");
 	var patient = getPatient(form);
 	var patientTr = makeTr(patient);
+	var errors = checkPatient(patient);
+
+	if(errors.length > 0){
+		showErrorMsg(errors);
+		return;
+	}
 
 	// Prints patient data to table
 	var patientTable = document.querySelector("#patientTable");
 	patientTable.appendChild(patientTr);
 
+	form.reset();
+
+	var errosMsgs = document.querySelector("#errorMsgs");
+	errorMsgs.innerHTML = "";
+
 });
+
+function showErrorMsg(errors){
+	var ul =  document.querySelector("#errorMsgs");
+	ul.innerHTML = ""
+	errors.forEach(function(error){
+		var li = document.createElement("li");
+		li.textContent = error;
+		ul.appendChild(li);
+	});
+}
 
 
 function getPatient(form) { // Gets patient data from form
@@ -43,4 +64,15 @@ function makeTd(data,Class){ // adds patient data to patient row
 	td.textContent = data;
 	td.classList.add(Class);
 	return td;
+}
+
+function checkPatient(patient) {
+	var errors = [];
+	if (patient.name.length == 0) errors.push("Please enter patient name")
+	if (patient.weight.length == 0) errors.push("Please enter patient weight")
+	if (patient.height.length == 0) errors.push("Please enter patient height")
+	if (patient.fat.length == 0) errors.push("Please enter patient body fat percentage")
+	if (!checkWeight(patient.weight)) errors.push("Invalid Weight");
+	if(!checkHeight(patient.height)) errors.push("Invalid Height");
+	return errors;
 }
