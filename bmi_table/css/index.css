@@ -146,8 +146,12 @@ button[disabled=disabled], button:disabled {
 	transition: 0.5s;
 }
 
-#filter-table{
+#table-filter{
 	width: 400px;
 	height: 35px;
 	margin-bottom: 20px;
+}
+
+.hide{
+	display: none;
 }
