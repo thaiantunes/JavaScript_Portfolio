@@ -4,24 +4,26 @@ addButton.addEventListener("click", function(){
 	event.preventDefault();
 	var form = document.querySelector("#form-add");
 	var patient = getPatient(form);
-	var patientTr = makeTr(patient);
-	var errors = checkPatient(patient);
 
+	var errors = checkPatient(patient);
 	if(errors.length > 0){
 		showErrorMsg(errors);
 		return;
 	}
 
-	// Prints patient data to table
-	var patientTable = document.querySelector("#patientTable");
-	patientTable.appendChild(patientTr);
-
+	addPatientToTable(patient);
 	form.reset();
 
 	var errosMsgs = document.querySelector("#errorMsgs");
 	errorMsgs.innerHTML = "";
 
 });
+
+function addPatientToTable(patient){
+	var patientTr = makeTr(patient);
+	var patientTable = document.querySelector("#patientTable");
+	patientTable.appendChild(patientTr);
+}
 
 function showErrorMsg(errors){
 	var ul =  document.querySelector("#errorMsgs");
