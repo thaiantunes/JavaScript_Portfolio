@@ -56,7 +56,7 @@ function makeTr(patient) { // creates patient data row
 	patientTr.appendChild(makeTd(patient.weight,"info-weight"));
 	patientTr.appendChild(makeTd(patient.height,"info-height"));
 	patientTr.appendChild(makeTd(patient.fat,"info-fat"));
-	patientTr.appendChild(makeTd(patient.weight,"info-bmi"));
+	patientTr.appendChild(makeTd(patient.bmi,"info-bmi"));
 
 	return patientTr;
 }
