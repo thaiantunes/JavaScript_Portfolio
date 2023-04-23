@@ -1,3 +1,7 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
@@ -38,14 +42,33 @@ nav a:hover {
 }
 
 .principal {
-	background: #CCCCCC;
 	padding: 30px;
+	clear: left;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+
+.gradiente {
+	background: linear-gradient(#FEFEFE, #888888);
 }
 
 .titulo-centralizado {
 	text-align: center;
-	font-weight: bold;
-	font-size: 24px;
+	margin: 0 0 1em;
+	font-size: 2em;
+	clear: left;
+	color: rgba(0,0,0,0.3);
 }
 
 .bold {
@@ -53,43 +76,51 @@ nav a:hover {
 }
 
 
-p {
-	display: block;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 0;
-	margin-right: 0;
-	text-align: center;	
-}
-
 #missao {
-	font-size: 20px;
 	font-style: italic;
 }
 
-.red-bold {
-  color: red;
-  font-weight: bold;
+.mapa {
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 3em 10em;
 }
 
-.sos {
-	list-style-type: disc;
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.itens {
 	display:inline-block;
 	vertical-align: top;
 	width: 20%;
-	margin-right: 15%;
-	margin-left: 5%;
-	font-style: italic;
+	margin-right: 5%;
+	margin-left: 20%;
+	line-height: 1.5em;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
-
+.itens li:before {
+    content: '🟊';
+    margin: 0 1em;    
 }
+
 
 .imagembeneficios {
-	width: 50%;
+	width: 30%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+.imagembeneficios:hover {
+	opacity: 0.3;
+}
+
+.video {
+	margin-top: 20px;
+	margin-left: 30%;
+	width: 560px;
 }
 
 footer {
