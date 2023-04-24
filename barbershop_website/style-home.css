@@ -135,3 +135,21 @@ footer {
 	margin: 20px;
 	
 }
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .imagembeneficios, .itens {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.itens, .imagembeneficios {
+		width: 100%;
+	}
+}
