@@ -32,3 +32,30 @@
 
     margin-bottom: 1rem;
 }
+
+.about__image {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        display: flex;
+    }
+
+    .about__content {
+        margin-right: 3rem;
+    }
+
+    .about__title {
+        text-align: left;
+    }
+
+    .about__text--division{
+        border-bottom: 1px solid var(--cinza-medio);
+        padding-bottom: 1.5rem;
+    }
+
+    .about__image {
+        display: block;
+    }
+}

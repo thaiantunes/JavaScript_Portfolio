@@ -110,3 +110,15 @@
         max-width: 400px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .plans__cards {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+}

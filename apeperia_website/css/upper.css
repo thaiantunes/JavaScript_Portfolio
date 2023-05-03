@@ -37,3 +37,17 @@
         max-width: 600px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .upper {
+        background-image: url(../img/bg-intro.jpg);
+        background-size: cover;
+        padding-top: 8.25rem;
+    }
+
+    .upper__title {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+    }
+}
+
