@@ -1,0 +1,33 @@
+.upper  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--branco);
+    text-align: center;
+    
+    background-color: var(--bg-upper-mobile);
+
+    padding-top: 12.25rem;
+    padding-bottom: 2.5rem;
+}
+
+.upper__titulo {
+    font-family: var(--montserrat);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+}
+
+.upper__text {
+    font-size: 1.25rem;
+    line-height: normal;
+
+    margin: 0 auto 2.5rem;
+}
+
+.upper__button {
+    width: 100%;
+}
