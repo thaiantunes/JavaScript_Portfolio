@@ -104,3 +104,9 @@
 .card__button--mega {
     border-color: var(--plans-card-mega);
 }
+
+@media screen and (min-width: 768px) { 
+    .card {
+        max-width: 400px;
+    }
+}
