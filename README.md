@@ -25,5 +25,3 @@ This portfolio showcases the Front-End projects that I have developed while lear
   - HTML5
   - CSS3
   - JavaScript
-
-![img](certificado.png)
