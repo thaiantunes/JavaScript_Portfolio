@@ -1,8 +1,8 @@
-# FrontEnd_Portfolio
+# FrontEnd_Portfolio 
 This portfolio showcases the Front-End projects that I have developed while learning HTML, CSS and JavaScript.
 
-## Projects
-### apeperia_website
+## Projects 
+### apeperia_website 
 - Website homepage for a fictitious company
 - After the mobile version, tablet and desktop versions were created 
 - Technologies: 
@@ -25,3 +25,11 @@ This portfolio showcases the Front-End projects that I have developed while lear
   - HTML5
   - CSS3
   - JavaScript
+ 
+1. topico 1
+1. topico 2
+1. topico 3
+
+![Img](certificado.png)
+
+[Google](www.google.com)
