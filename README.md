@@ -26,6 +26,4 @@ This portfolio showcases the Front-End projects that I have developed while lear
   - CSS3
   - JavaScript
 
-1. teste
-1. teste
-1. teste
+![img](certificado.png)
