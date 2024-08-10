@@ -26,8 +26,8 @@ This portfolio showcases the Front-End projects that I have developed while lear
   - CSS3
   - JavaScript
  
-1. topico 1
-1. topico 2
+1. *topico 1*
+1. **topico 2**
 1. topico 3
 
 ![Img](certificado.png)
